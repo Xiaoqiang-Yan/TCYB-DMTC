@@ -1,0 +1,27 @@
+coeff:
+    graph: 1
+    local: 0.5
+
+common:
+    large_bs: 60
+    small_bs: 32
+    epochs: 8
+    repeated: 10
+    input_size: 224
+    workers: 2
+    lr: 0.0001
+
+    arch: alexnet
+    classifier: SimpleClassifier
+
+    layers: [8, 25]
+    c_layer: 25
+
+    root: data/Cifar-100/task_all
+    source: meta/Cifar-100/task_all.txt
+
+    print_freq: 10
+    save_path: checkpoint/Cifar-100/task_all_Cifar_100
+
+    num_classes: 7
+    thresh: 0.95
